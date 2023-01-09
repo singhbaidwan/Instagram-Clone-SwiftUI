@@ -28,6 +28,8 @@
 		0B8A3D4829634C7C007C8336 /* AddMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A3D4729634C7C007C8336 /* AddMediaView.swift */; };
 		0B8A3D4A29634C8B007C8336 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A3D4929634C8B007C8336 /* ActivityView.swift */; };
 		0B8A3D4C29634C96007C8336 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A3D4B29634C96007C8336 /* ProfileView.swift */; };
+		0BBC30AF296C6CA200940C88 /* DiscoverPeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC30AE296C6CA200940C88 /* DiscoverPeopleCell.swift */; };
+		0BBC30B1296C766500940C88 /* DiscoverPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC30B0296C766500940C88 /* DiscoverPeopleView.swift */; };
 		0BDB291929688C8F00F32B65 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB291829688C8F00F32B65 /* PlayerView.swift */; };
 		0BDB291B29688F5A00F32B65 /* PlayVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB291A29688F5A00F32B65 /* PlayVideo.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		0B8A3D4729634C7C007C8336 /* AddMediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMediaView.swift; sourceTree = "<group>"; };
 		0B8A3D4929634C8B007C8336 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		0B8A3D4B29634C96007C8336 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0BBC30AE296C6CA200940C88 /* DiscoverPeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleCell.swift; sourceTree = "<group>"; };
+		0BBC30B0296C766500940C88 /* DiscoverPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPeopleView.swift; sourceTree = "<group>"; };
 		0BDB291829688C8F00F32B65 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		0BDB291A29688F5A00F32B65 /* PlayVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0B6CB85729673BA000BC89D1 /* StoryView.swift */,
+				0BBC30B0296C766500940C88 /* DiscoverPeopleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		0B894A0E2963523400B1569D /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				0BBC30AE296C6CA200940C88 /* DiscoverPeopleCell.swift */,
 				0B6CB859296741C400BC89D1 /* PostView.swift */,
 				0BDB291829688C8F00F32B65 /* PlayerView.swift */,
 				0B894A0C2963514E00B1569D /* StoryCellView.swift */,
@@ -258,6 +264,7 @@
 				0BDB291929688C8F00F32B65 /* PlayerView.swift in Sources */,
 				0B8A3D4429634C5F007C8336 /* HomeView.swift in Sources */,
 				0B5807972969E0C8000D6FDB /* SettingListDataModel.swift in Sources */,
+				0BBC30B1296C766500940C88 /* DiscoverPeopleView.swift in Sources */,
 				0B3C15D7296347F50097D6AA /* Instagram_CloneApp.swift in Sources */,
 				0B6CB85E296744ED00BC89D1 /* PostData.swift in Sources */,
 				0BDB291B29688F5A00F32B65 /* PlayVideo.swift in Sources */,
@@ -267,6 +274,7 @@
 				0B8A3D4C29634C96007C8336 /* ProfileView.swift in Sources */,
 				0B8A3D4A29634C8B007C8336 /* ActivityView.swift in Sources */,
 				0B5807992969E162000D6FDB /* SettingListData.swift in Sources */,
+				0BBC30AF296C6CA200940C88 /* DiscoverPeopleCell.swift in Sources */,
 				0B6CB85A296741C400BC89D1 /* PostView.swift in Sources */,
 				0B894A0B2963508200B1569D /* StoryData.swift in Sources */,
 				0B6CB85C2967428D00BC89D1 /* PostDataModel.swift in Sources */,

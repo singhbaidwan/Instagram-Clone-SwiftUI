@@ -22,10 +22,14 @@ struct ProfileView: View {
     @State private var showStoryAddition:Bool = true
     @Namespace var animation
     @State private var selectedTab:ProfilePhotoTagFilter = .profile
+    @State private var showDiscoverPeople:Bool = false
     
     var body: some View {
         ScrollView(.vertical,showsIndicators: false){
             ProfileHeader
+            
+            
+            
             
             profileTagSwitcher
             
@@ -213,9 +217,11 @@ extension ProfileView{
                 }
                 
                 Button {
-                    
+                    withAnimation {
+                        showDiscoverPeople.toggle()
+                    }
                 } label: {
-                    Image(systemName: "person.badge.plus")
+                    Image(systemName: showDiscoverPeople ? "person.fill.badge.plus" : "person.badge.plus")
                         .resizable()
                         .scaledToFit()
                         .foregroundColor(.primary)
@@ -228,6 +234,31 @@ extension ProfileView{
                 }
                 
             }
+            
+            if showDiscoverPeople{
+                VStack{
+                    HStack{
+                        Text("Discover People")
+                        .font(.system(size: 18,weight: .bold))
+                        
+                        Spacer()
+                        NavigationLink("See all") {
+                            DiscoverPeopleView()
+                        }
+
+                    }
+                    ScrollView(.horizontal,showsIndicators: false)
+                    {
+                        LazyHStack{
+                            ForEach(0...5,id:\.self){_ in
+                                DiscoverPeopleCell()
+                            }
+                        }
+                    }
+
+                }
+            }
+            
             
             VStack{
                 HStack{

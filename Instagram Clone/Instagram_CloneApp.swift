@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 @main
 struct Instagram_CloneApp: App {
+    
+    
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            MainView()
+            NavigationView{
+                MainView()
+                
+            }
         }
     }
 }
+

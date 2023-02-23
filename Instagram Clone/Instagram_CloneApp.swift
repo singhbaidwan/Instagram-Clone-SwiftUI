@@ -20,7 +20,6 @@ struct Instagram_CloneApp: App {
         WindowGroup {
             NavigationView{
                 MainView()
-                
             }
         }
     }
